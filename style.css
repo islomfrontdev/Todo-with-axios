@@ -1,0 +1,84 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#board {
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+#board li:hover {
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.455);
+          box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.455);
+  border-radius: 5px;
+}
+
+#addTask {
+  margin: 10px 0;
+}
+
+#addTask input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  border-bottom: 1px solid #000;
+}
+
+#addTask .input-group {
+  width: 90%;
+}
+
+#addTask .input-group input {
+  width: 100%;
+}
+
+#addTask i {
+  color: #44646d;
+  font-size: 24px;
+}
+
+#form {
+  border-radius: 5px;
+}
+
+#form input {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.head {
+  position: relative;
+}
+
+.head .menuList {
+  width: 250px;
+  border-radius: 10px;
+  position: absolute;
+  top: 40px;
+  right: -15px;
+  z-index: 100;
+  background-color: white;
+}
+
+.head .menuList i {
+  margin-right: 8px;
+}
+
+.head .menuList p {
+  cursor: pointer;
+}
+
+#completed input,
+#unCompleted input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  width: 300px;
+}
+/*# sourceMappingURL=style.css.map */

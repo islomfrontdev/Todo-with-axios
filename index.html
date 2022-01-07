@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body class="bg-light">
+    <div class="container py-3">
+      <div id="board" class="bg-ligth shadow rounded p-3">
+        <div>
+          <div class="d-flex align-items-center justify-content-between head">
+            <h2>Todo</h2>
+            <button class="btn" id="menu">
+              <i class="fa fa-ellipsis-v" aria-hidden="true" class="fs-1"></i>
+            </button>
+            <div class="menuList shadow d-none">
+              <div class="">
+                <button class="btn">
+                  <i class="fa fa-pencil" aria-hidden="true"></i>
+                  Rename List
+                </button>
+              </div>
+              <div class="">
+                <button class="btn">
+                  <i class="fa fa-pie-chart" aria-hidden="true"></i>
+                  Setcolor
+                </button>
+              </div>
+              <div class="">
+                <button class="btn">
+                  <i class="fa fa-copy" aria-hidden="true"></i>
+                  Duplicate list
+                </button>
+              </div>
+              <div class="">
+                <button class="btn">
+                  <i class="fa fa-trash-alt" aria-hidden="true"></i>
+                  Delete list
+                </button>
+              </div>
+              <div class="d-flex">
+                <button class="btn">
+                  <i class="fa fa-trash" aria-hidden="true"></i>
+                  Delete all completed task
+                </button>
+              </div>
+            </div>
+          </div>
+          <form
+            action=""
+            id="addTask"
+            class="d-flex align-items-center justify-content-between"
+          >
+            <div class="input-group">
+              <input
+                type="text"
+                name="title"
+                placeholder="New Task title"
+                id="inputTask"
+              />
+              <input
+                type="text"
+                name="isCompleted"
+                placeholder="Is Task Completed"
+                id="inputCompleted"
+              />
+            </div>
+            <button class="btn pt-2" id="plusBtn">
+              <i class="fa fa-upload" aria-hidden="true"></i>
+            </button>
+          </form>
+          <form action="" class="d-flex align-items-center" id="form"></form>
+          <ul id="unCompleted" class="m-0 p-0"></ul>
+        </div>
+        <div>
+          <h4>Completed</h4>
+          <ul id="completed" class="m-0 p-0"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+    <script src="./form.js"></script>
+  </body>
+</html>

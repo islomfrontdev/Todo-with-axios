@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+}
+#board {
+  width: 600px;
+  margin: 0 auto;
+  border-radius: 10px;
+  li {
+    &:hover {
+      box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.455);
+      border-radius: 5px;
+    }
+  }
+}
+#addTask {
+  margin: 10px 0;
+  input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    border-bottom: 1px solid #000;
+  }
+  .input-group {
+    width: 90%;
+    input {
+      width: 100%;
+    }
+  }
+  i {
+    color: rgb(68, 100, 109);
+    font-size: 24px;
+  }
+}
+
+#form {
+  border-radius: 5px;
+  input {
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+}
+.head {
+  position: relative;
+  .menuList {
+    width: 250px;
+    border-radius: 10px;
+    position: absolute;
+    top: 40px;
+    right: -15px;
+    z-index: 100;
+    background-color: white;
+    i {
+      margin-right: 8px;
+    }
+    p {
+      cursor: pointer;
+    }
+  }
+}
+#completed,
+#unCompleted {
+  input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 300px;
+  }
+}
